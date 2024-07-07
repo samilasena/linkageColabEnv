@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='linkageColabEnv',
-    version='0.1',
+    version='0.3',
     packages=['linkageColabEnv'],
     install_requires=[],
     url='https://github.com/joseaugustoduarte/linkageColabEnv',
