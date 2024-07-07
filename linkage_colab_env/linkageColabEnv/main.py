@@ -1,4 +1,4 @@
-from data_linkage_colab_env.utils.utils import preparing_environment, download_install_java, \
+from .utils import preparing_environment, download_install_java, \
     download_install_elasticsearch, download_install_spark
 
 

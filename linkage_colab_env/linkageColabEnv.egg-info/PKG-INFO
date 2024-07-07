@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: linkageColabEnv
+Version: 0.1
+Summary: Download, install and configure an environment to perform data engineering and data science on Google Colab, using Java, Spark and Elasticsearch.
+Home-page: https://github.com/joseaugustoduarte/linkageColabEnv
+Author: José Augusto Duarte
+Author-email: joseaugustoduarte@gmail.com
+License: MIT License
+Description-Content-Type: text/markdown
+
+Download, install and configure an environment to perform data engineering and data science on Google Colab, using Java, Spark and Elasticsearch.
