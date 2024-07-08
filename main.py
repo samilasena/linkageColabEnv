@@ -113,11 +113,19 @@ def download_install_elasticsearch():
 
     # print(os.popen('curl -sX GET "localhost:9200"').read())
 
-    
+
+def download_datasets():
+    LIB = f"git clone https://github.com/joseaugustoduarte/linkageColabEnv.git"
+    DATA = f"git clone https://github.com/joseaugustoduarte/linkage_database.git"
+
+    if os.system(LIB) != 0: print(f'Error: {LIB}')
+    if os.system(DATA) != 0: print(f'Error: {DATA}') 
+
 
 def start():
   preparing_environment()
   download_install_java()
   download_install_elasticsearch()
+  download_datasets()
   spark, sc = download_install_spark()
   return spark, sc
