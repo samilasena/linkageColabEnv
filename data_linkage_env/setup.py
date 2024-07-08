@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='linkageColabEnv',
     version='10',
-    packages=['linkage_colab_env'],
+    packages=['linkageColabEnv'],
     install_requires=[],
     url='https://github.com/joseaugustoduarte/linkageColabEnv',
     license='MIT License',
