@@ -10,7 +10,7 @@ def preparing_environment():
     PIP_UPGRADE = f"pip3 install --upgrade requests"
     if os.system(PIP_UPGRADE) != 0: print(f'Error: {PIP_UPGRADE}')
 
-    print('Limpeza do diretório raiz, Atualização do S.O, Atualização do pip: -> OK')
+    print('Limpeza do diretório Raiz, Atualizações do S.O e do PIP: -> OK')
 
 
 def download_install_java():
@@ -109,7 +109,7 @@ def download_install_elasticsearch():
     print('\n\nDownload, instalação e configuração do Elasticsearch -> OK')
 
 def start():
-  preparing_environment()
+#   preparing_environment()
   download_install_java()
   download_install_elasticsearch()
   spark, sc = download_install_spark()
