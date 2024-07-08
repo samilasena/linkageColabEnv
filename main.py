@@ -97,17 +97,19 @@ def download_install_elasticsearch():
     BG_ES_COMMAND = f"sudo -H -u daemon elasticsearch-{VERSION_ES}/bin/elasticsearch &"
     if os.system(BG_ES_COMMAND) != 0: print(f'Error: {BG_ES_COMMAND}')
 
+    print('\n\nDownload, instalação e configuração do Elasticsearch 7.10.2 -> OK')
+
     os.system("rm -rf /content/*.gz*")
-
-    time.sleep(20)
-
-    print(os.popen('ps -ef | grep elasticsearch').read())
 
     time.sleep(5)
 
-    print(os.popen('curl -sX GET "localhost:9200"').read())
+    # print(os.popen('ps -ef | grep elasticsearch').read())
 
-    print('\n\nDownload, instalação e configuração do Elasticsearch -> OK')
+    # time.sleep(5)
+
+    # print(os.popen('curl -sX GET "localhost:9200"').read())
+
+    
 
 def start():
 #   preparing_environment()
