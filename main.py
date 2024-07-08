@@ -46,7 +46,8 @@ def download_install_spark():
     from pyspark import SparkContext
 
     # Spark context creation
-    spark = SparkSession.builder.appName("oficina_linkage").getOrCreate()
+    spark = SparkSession.builder.master("local[*]").appName("oficina_linkage_2024").getOrCreate()
+    spark.conf.set("write.parquet.compression-codec", "gzip")
     sc = spark.sparkContext
 
     from pyspark.sql import functions as F
