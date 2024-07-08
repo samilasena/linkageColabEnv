@@ -97,7 +97,7 @@ def download_install_elasticsearch():
     BG_ES_COMMAND = f"sudo -H -u daemon elasticsearch-{VERSION_ES}/bin/elasticsearch &"
     if os.system(BG_ES_COMMAND) != 0: print(f'Error: {BG_ES_COMMAND}')
 
-    print('\n\nDownload, instalação e configuração do Elasticsearch 7.10.2 -> OK')
+    print('Download, instalação e configuração do Elasticsearch 7.10.2 -> OK')
 
     os.system("rm -rf /content/*.gz*")
 
@@ -112,7 +112,7 @@ def download_install_elasticsearch():
     
 
 def start():
-#   preparing_environment()
+  preparing_environment()
   download_install_java()
   download_install_elasticsearch()
   spark, sc = download_install_spark()
