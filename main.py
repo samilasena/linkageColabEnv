@@ -117,9 +117,9 @@ def download_install_elasticsearch():
 def download_datasets():
     LIB = f"git clone https://github.com/joseaugustoduarte/linkageColabEnv.git"
     DATA = f"git clone https://github.com/joseaugustoduarte/linkage_database.git"
-
     if os.system(LIB) != 0: print(f'Error: {LIB}')
-    if os.system(DATA) != 0: print(f'Error: {DATA}') 
+    if os.system(DATA) != 0: print(f'Error: {DATA}')
+    print('Download de datasets -> OK')
 
 
 def start():
