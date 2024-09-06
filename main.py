@@ -23,7 +23,7 @@ def download_install_java():
 
 
 def download_install_spark():
-    SPARK_URL = "https://dlcdn.apache.org/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz"
+    SPARK_URL = "https://dlcdn.apache.org/spark/spark-3.5.2/spark-3.5.2-bin-hadoop3.tgz"
     SPARK_VERSION = SPARK_URL.split('/')[-1]
     SPARK_PATH = f"/content/{SPARK_VERSION.replace('.tgz', '')}"
     WGET_COMMAND = f"wget -q {SPARK_URL}"
@@ -59,7 +59,7 @@ def download_install_spark():
     from pyspark.sql import Window
     # from pyspark.sql.types import *
 
-    print('Download, instalação e configuração do Spark 3.5.1 -> OK')
+    print('Download, instalação e configuração do Spark 3.5.2 -> OK')
 
     os.system("rm -rf /content/*.tgz")
 
@@ -115,7 +115,7 @@ def download_install_elasticsearch():
 
 
 def download_datasets():
-    LIB = f"git clone https://github.com/joseaugustoduarte/linkageColabEnv.git"
+    LIB = f"git clone https://github.com/samilasena/linkageColabEnv.git"
     DATA = f"git clone https://github.com/joseaugustoduarte/linkage_database.git"
     if os.system(LIB) != 0: print(f'Error: {LIB}')
     if os.system(DATA) != 0: print(f'Error: {DATA}')
