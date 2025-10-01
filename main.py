@@ -23,7 +23,7 @@ def download_install_java():
 
 
 def download_install_spark():
-    SPARK_URL = "https://dlcdn.apache.org/spark/spark-3.5.2/spark-3.5.2-bin-hadoop3.tgz"
+    SPARK_URL = "https://dlcdn.apache.org/spark/spark-3.5.6/spark-3.5.6-bin-hadoop3.tgz"
     SPARK_VERSION = SPARK_URL.split('/')[-1]
     SPARK_PATH = f"/content/{SPARK_VERSION.replace('.tgz', '')}"
     WGET_COMMAND = f"wget -q {SPARK_URL}"
@@ -59,7 +59,7 @@ def download_install_spark():
     from pyspark.sql import Window
     # from pyspark.sql.types import *
 
-    print('Download, instalação e configuração do Spark 3.5.2 -> OK')
+    print('Download, instalação e configuração do Spark 3.5.6 -> OK')
 
     os.system("rm -rf /content/*.tgz")
 
